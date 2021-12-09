@@ -1,0 +1,15 @@
+{% load static %}
+
+{% block content %}
+
+<h1>Links</h1>
+<ol>
+    {% for LinkBtn in LinkBtn_list%}
+
+    <li><a href="{{LinkBtn.linkbtn_link}}">{{LinkBtn.linkbtn_text}}</a></li>
+    
+    {% endfor %}
+</ol>
+
+
+{% endblock %}
